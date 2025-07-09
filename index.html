@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Multiplayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Join Screen -->
+    <div id="join-screen" class="screen active">
+        <h1>Rock Paper Scissors</h1>
+        <div id="join-form">
+            <input type="text" id="player-name" placeholder="Your Name">
+            <input type="text" id="room-code" placeholder="Room ID (leave empty to create)">
+            <button id="join-btn">Join Game</button>
+        </div>
+    </div>
+
+    <!-- Waiting Screen -->
+    <div id="waiting-screen" class="screen">
+        <h2>Waiting for opponent...</h2>
+        <p>Share this room ID:</p>
+        <div id="room-id"></div>
+        <button id="copy-btn">Copy</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <div id="players">
+            <div id="player1-info">
+                <div class="hand">✋</div>
+                <div id="player1-name"></div>
+                <div>Score: <span id="player1-score">0</span></div>
+            </div>
+            <div>VS</div>
+            <div id="player2-info">
+                <div class="hand">✋</div>
+                <div id="player2-name"></div>
+                <div>Score: <span id="player2-score">0</span></div>
+            </div>
+        </div>
+        
+        <div id="game-status">Make your choice!</div>
+        
+        <div class="choices">
+            <button data-choice="rock">✊</button>
+            <button data-choice="paper">✋</button>
+            <button data-choice="scissors">✌️</button>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

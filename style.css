@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.screen {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#game-area {
+    margin-top: 30px;
+}
+
+.hand {
+    font-size: 60px;
+    margin: 20px;
+}
+
+.choices button {
+    font-size: 30px;
+    padding: 15px;
+    margin: 0 10px;
+}
+
+#room-id {
+    font-weight: bold;
+    background: #f0f0f0;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+
+#copy-btn {
+    background: #2196F3;
+}
+
+#players {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#game-status {
+    margin: 20px 0;
+    font-size: 20px;
+    min-height: 30px;
+}
